@@ -1,0 +1,9 @@
+---
+- name: Install WordPress with MySQL, Nginx, and PHP-FPM
+  hosts: webserver
+  become: True
+  remote_user: root
+  vars:
+    server_hostname: localhost
+  roles:
+    - nginx

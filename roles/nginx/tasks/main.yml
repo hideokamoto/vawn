@@ -1,0 +1,7 @@
+---
+- name: Install nginx
+  apt: name=nginx update_cache=yes
+
+- name: copy nginx config file
+  template: src=default.conf dest=/etc/nginx/conf.d/default.conf
+  notify: restart nginx
