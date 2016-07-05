@@ -1,0 +1,5 @@
+ansible.cfg
+*.retry
+.vagrant
+*.key
+*.crt
